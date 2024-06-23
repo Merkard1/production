@@ -4,10 +4,13 @@ import { Link } from "react-router-dom";
 
 import "./styles/index.scss";
 
-import MainpageAsync from "./pages/MainPage/Mainpage.async";
-import AboutPageAsync from "./pages/AboutPage/AboutPage.async";
-import { useTheme } from "./theme/useTheme";
-import { classNames } from "./helpers/classNames/className";
+// App
+import { useTheme } from "./providers/themeProvider";
+// Pages
+import { AboutPageAsync } from "@/2_pages/AboutPage";
+import { MainpageAsync } from "@/2_pages/MainPage";
+// Shared
+import { classNames } from "@/6_shared/lib/classNames/className";
 
 const App = () => {
   const { theme, toggleTheme } = useTheme();
